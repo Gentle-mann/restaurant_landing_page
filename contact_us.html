@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="contact">
+      <h1>Contact Us</h1>
+      <form action="#">
+        <div class="form-shape">
+          <label for="query"> Type of query </label>
+          <select name="myQuery" id="query">
+            <option value="sel">--Select--</option>
+            <option value="ord">Order not delivered</option>
+            <option value="website">Website issues</option>
+            <option value="meal">Meal issues</option>
+            <option value="others">Others (describe)</option>
+          </select>
+        </div>
+        <div class="form-shape">
+          <label for="email">Email address</label>
+          <br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email address"
+          />
+        </div>
+        <div class="form-shape">
+          <label for="text">Name</label>
+          <input type="text" placeholder="Name" id="name" name="name" />
+        </div>
+        <div class="form-shape">
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Phone Number"
+          />
+        </div>
+        <div class="form-shape">
+          Are you a membr of OnlineFoodShop: Yes
+          <input type="radio" name="yes" value="yes" /> No
+          <input type="radio" name="no" value="no" />
+        </div>
+        <div class="form-shape">
+          Describe your query in more detail
+          <textarea name="details" id="details" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </div>
+  </body>
+</html>

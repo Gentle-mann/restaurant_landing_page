@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: gray;
+}
+
+.header-text,
+header {
+    font-size: 50px;
+    font-weight: bold;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    background: grey;
+    height: 75px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 10px;
+    border: 1px solid black;
+}
+
+nav img {
+    height: 40px;
+    width: 40px;
+    background: black;
+    display: block;
+}
+
+nav a {
+    flex-flow: row;
+    justify-content: space-around;
+    margin-right: 10px;
+}
+
+nav figure {
+    align-self: center;
+}
+
+nav :any-link {
+    color: white;
+}
+
+nav a:hover,
+nav a:active,
+nav a:focus {
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+h2 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: whitesmoke;
+    font-weight: bolder;
+    text-shadow: 1px 5px 5px black;
+}
+
+main p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: yellow;
+}
+
+main {
+    background: url('../images/food2.jpg');
+    border-radius: 15px 15px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+main h2 {
+    margin: 20px;
+}
+
+.row-image {
+    display: flex;
+    flex-direction: column;
+
+}
+
+div {
+    margin: 10px;
+}
+
+.dark-image-container {
+    width: min(45%, 500px);
+    margin: 20px auto;
+    border-radius: 20px;
+    background-color: black;
+    object-fit: cover;
+    box-shadow: 0 0 5px 10px black;
+}
+
+.dark-image-container img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.divider {
+    margin-top: 20px;
+    border-top: 1px solid black;
+}
+
+.red-text {
+    color: red;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.square-image img {
+    height: 200px;
+    width: 30%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-right: 10px;
+
+}
+
+.order-now img {
+    position: fixed;
+    bottom: 0;
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.formshape form {
+    align-self: flex-start;
+    background-color: black;
+}
+
+@media screen and (min-width: 992px) {
+    .row-image {
+        display: grid;
+        flex-direction: row;
+    }
+
+}
+
+.contact main h1 {
+    background-color: blue;
+    text-align: center;
+}
+
+::placeholder {
+    color: gray;
+}
